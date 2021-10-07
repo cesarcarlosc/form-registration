@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- formulario de registro -->
+        <form name="RegForm" action="" onsubmit="return validar()">
+            <h1>REGISTRATION FORM</h1>
+            <!-- label first name e input  -->
+            <div class="field">
+                <label for="firstname">First Name:</label>
+                <input type="text" name="FirstName" id="firstname" placeholder="Enter your first name">
+            </div>
+            <!-- label Last name e input  -->
+            <div class="field">
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="LastName" id="lastname" placeholder="Enter your last name">
+            </div>
+            <!-- label email e input -->
+            <div class="field">
+                <label for="email">Email:</label>
+                <input type="email" name="Email" id="email" placeholder="abc@gmail">
+            </div>
+            <!-- label número de movil e input -->
+            <div class="field">
+                <label for="number">Mobile Number</label>
+                <input type="text" name="Number" id="number" placeholder="999999999">
+            </div>
+            <!-- botones radio género -->
+            <div class="gender">
+                <label for="gender">Gender:</label>
+                <label for="male">
+                    <input type="radio" name="Gender" value="male" id="male">Male
+                </label>
+                <label for="female">
+                    <input type="radio" name="Gender" value="female" id="female">Female
+                </label>
+            </div>
+
+            <div class="field">
+                <label for="country">Country:</label>
+                <select name="Country" id="country">
+                    <option selected="" value="Default">(Please select a country)</option>
+                    <option value="AF">Australia</option>
+                    <option value="AL">Canadá</option>
+                    <option value="DZ">India</option>
+                    <option value="AS">Russia</option>
+                    <option value="PE">Perú</option>
+                    <option value="US">EEUU</option>
+                </select>
+            </div>
+            <!-- boton check accept -->
+            <div class="accept">
+                <label for="">Acceptance Terms:</label>
+                <label>
+                    <input type="checkbox" name="Accept" id="accept" value="accept"> 
+                </label>
+            </div>
+
+            <div class="field">
+                <button type="submit">SEND</button>
+            </div>
+
+        </form>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
